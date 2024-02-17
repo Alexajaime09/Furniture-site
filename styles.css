@@ -189,7 +189,7 @@ section .heading .subtitle{
 .container{
     max-width: 1200px;
     padding: 2rem 1rem;
-    margin:auto;
+    margin: auto;
    
 }
 
@@ -342,6 +342,7 @@ color: #fff;
 .arrival .item .btn-shop{
     position: absolute;
     top: 60%;
+    left: 6%;
     margin: auto;
     font-size: 13px;
     color: #fff;
@@ -424,7 +425,7 @@ color: #fff;
 
 /*BREAKPOINTS*/
 
-@media(max-width: 750px){
+@media(max-width: 768px){
     .icons{
         display:block;
         color:#fff;
@@ -443,7 +444,8 @@ color: #fff;
         justify-content: center;
         align-items: center;
         gap: 1rem;
-        background: rgb(16, 17, 17);
+        background: rgba(27, 27, 27, 0.5);
+        backdrop-filter: blur(3px);
         transition: all .4s ease ;
         overflow: hidden;
     }
@@ -452,6 +454,10 @@ color: #fff;
         margin: 20px 0;
     }
     
+    .header .navegation li a{
+        font-size: 18px;
+    }
+
     #check:checked~.icons #open-menu{
         display: none;
     }
@@ -474,6 +480,8 @@ color: #fff;
         opacity: 1;
     }
   
-
+    .arrival .item .btn-shop{
+        opacity: 1;
+    }
 
 }
